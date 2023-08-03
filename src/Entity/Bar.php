@@ -34,7 +34,7 @@ class Bar
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $dateCreation = null;
 
-    #[ORM\ManyToMany(targetEntity: typeBar::class, inversedBy: 'bars')]
+    #[ORM\ManyToMany(targetEntity: TypeBar::class, inversedBy: 'bars')]
     private Collection $typesBar;
 
     #[ORM\ManyToMany(targetEntity: Service::class, inversedBy: 'bars')]

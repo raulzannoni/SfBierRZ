@@ -18,7 +18,7 @@ class Service
     #[ORM\Column(length: 50)]
     private ?string $name = null;
 
-    #[ORM\ManyToMany(targetEntity: Bar::class, mappedBy: 'service')]
+    #[ORM\ManyToMany(targetEntity: Bar::class, mappedBy: 'Service')]
     private Collection $bars;
 
     public function __construct()

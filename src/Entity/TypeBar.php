@@ -18,7 +18,7 @@ class TypeBar
     #[ORM\Column(length: 50)]
     private ?string $name = null;
 
-    #[ORM\ManyToMany(targetEntity: Bar::class, mappedBy: 'typeBar')]
+    #[ORM\ManyToMany(targetEntity: Bar::class, mappedBy: 'TypeBar')]
     private Collection $bars;
 
     public function __construct()
